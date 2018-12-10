@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E71F3053-056C-4381-9638-048ED73BDFF6}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{a52b8a63-bc84-4b47-910d-692533484892}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ClassLibrary1</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>ClassLibrary1</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CAMediaTimingFunction_.cs" />
+    <Compile Include="CAMediaTimingFunction_MDCAnimationTiming.cs" />
+    <Compile Include="CAMediaTimingFunction_MotionInterchangeExtension.cs" />
+    <Compile Include="CATransaction_MotionAnimator.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="MDCActionHandler.cs" />
+    <Compile Include="MDCActivityIndicator.cs" />
+    <Compile Include="MDCActivityIndicatorAnimation.cs" />
+    <Compile Include="MDCActivityIndicatorColorThemer.cs" />
+    <Compile Include="MDCActivityIndicatorColorThemer_ToBeDeprecated.cs" />
+    <Compile Include="MDCActivityIndicatorDelegate.cs" />
+    <Compile Include="MDCActivityIndicatorTransition.cs" />
+    <Compile Include="MDCAlertAction.cs" />
+    <Compile Include="MDCAlertColorThemer.cs" />
+    <Compile Include="MDCAlertColorThemer_ToBeDeprecated.cs" />
+    <Compile Include="MDCAlertController.cs" />
+    <Compile Include="MDCAlertControllerView.cs" />
+    <Compile Include="MDCAlertTypographyThemer.cs" />
+    <Compile Include="MDCAppBar.cs" />
+    <Compile Include="MDCAppBarColorThemer.cs" />
+    <Compile Include="MDCAppBarColorThemer_ToBeDeprecated.cs" />
+    <Compile Include="MDCAppBarContainerViewController.cs" />
+    <Compile Include="MDCAppBarNavigationController.cs" />
+    <Compile Include="MDCAppBarNavigationControllerDelegate.cs" />
+    <Compile Include="MDCAppBarNavigationController_ToBeDeprecated.cs" />
+    <Compile Include="MDCAppBarTextColorAccessibilityMutator.cs" />
+    <Compile Include="MDCAppBarTypographyThemer.cs" />
+    <Compile Include="MDCAppBarViewController.cs" />
+    <Compile Include="MDCBaseCell.cs" />
+    <Compile Include="MDCBasicColorScheme.cs" />
+    <Compile Include="MDCBasicFontScheme.cs" />
+    <Compile Include="MDCBottomAppBarColorThemer.cs" />
+    <Compile Include="MDCBottomAppBarColorThemer_ToBeDeprecated.cs" />
+    <Compile Include="MDCBottomAppBarView.cs" />
+    <Compile Include="MDCBottomNavigationBar.cs" />
+    <Compile Include="MDCBottomNavigationBarColorThemer.cs" />
+    <Compile Include="MDCBottomNavigationBarColorThemer_ToBeDeprecated.cs" />
+    <Compile Include="MDCBottomNavigationBarDelegate.cs" />
+    <Compile Include="MDCBottomNavigationBarTypographyThemer.cs" />
+    <Compile Include="MDCBottomSheetController.cs" />
+    <Compile Include="MDCBottomSheetControllerDelegate.cs" />
+    <Compile Include="MDCBottomSheetPresentationController.cs" />
+    <Compile Include="MDCBottomSheetPresentationControllerDelegate.cs" />
+    <Compile Include="MDCBottomSheetTransitionController.cs" />
+    <Compile Include="MDCBottomSheetTransitionController_ScrimAccessibility.cs" />
+    <Compile Include="MDCButton.cs" />
+    <Compile Include="MDCButtonBar.cs" />
+    <Compile Include="MDCButtonBarButton.cs" />
+    <Compile Include="MDCButtonBarColorThemer.cs" />
+    <Compile Include="MDCButtonBarColorThemer_ToBeDeprecated.cs" />
+    <Compile Include="MDCButtonBarDelegate.cs" />
+    <Compile Include="MDCButtonBarTypographyThemer.cs" />
+    <Compile Include="MDCButtonColorThemer.cs" />
+    <Compile Include="MDCButtonColorThemer_ToBeDeprecated.cs" />
+    <Compile Include="MDCButtonScheme.cs" />
+    <Compile Include="MDCButtonScheming.cs" />
+    <Compile Include="MDCButtonTitleColorAccessibilityMutator.cs" />
+    <Compile Include="MDCButtonTypographyThemer.cs" />
+    <Compile Include="MDCCard.cs" />
+    <Compile Include="MDCCardCollectionCell.cs" />
+    <Compile Include="MDCCardScheme.cs" />
+    <Compile Include="MDCCardScheming.cs" />
+    <Compile Include="MDCCardsColorThemer.cs" />
+    <Compile Include="MDCCardThemer.cs" />
+    <Compile Include="MDCChipCollectionViewCell.cs" />
+    <Compile Include="MDCChipCollectionViewFlowLayout.cs" />
+    <Compile Include="MDCChipField.cs" />
+    <Compile Include="MDCChipFieldDelegate.cs" />
+    <Compile Include="MDCChipView.cs" />
+    <Compile Include="MDCChipViewColorThemer.cs" />
+    <Compile Include="MDCChipViewColorThemer_ToBeDeprecated.cs" />
+    <Compile Include="MDCChipViewFontThemer.cs" />
+    <Compile Include="MDCChipViewScheme.cs" />
+    <Compile Include="MDCChipViewScheming.cs" />
+    <Compile Include="MDCChipViewThemer.cs" />
+    <Compile Include="MDCChipViewTypographyThemer.cs" />
+    <Compile Include="MDCCollectionViewCell.cs" />
+    <Compile Include="MDCCollectionViewController.cs" />
+    <Compile Include="MDCCollectionViewEditing.cs" />
+    <Compile Include="MDCCollectionViewEditingDelegate.cs" />
+    <Compile Include="MDCCollectionViewFlowLayout.cs" />
+    <Compile Include="MDCCollectionViewLayoutAttributes.cs" />
+    <Compile Include="MDCCollectionViewStyling.cs" />
+    <Compile Include="MDCCollectionViewStylingDelegate.cs" />
+    <Compile Include="MDCCollectionViewTextCell.cs" />
+    <Compile Include="MDCColorScheme.cs" />
+    <Compile Include="MDCColorScheming.cs" />
+    <Compile Include="MDCContainedButtonColorThemer.cs" />
+    <Compile Include="MDCContainedButtonThemer.cs" />
+    <Compile Include="MDCCornerTreatment.cs" />
+    <Compile Include="MDCCurvedCornerTreatment.cs" />
+    <Compile Include="MDCCurvedRectShapeGenerator.cs" />
+    <Compile Include="MDCCutCornerTreatment.cs" />
+    <Compile Include="MDCDialogPresentationController.cs" />
+    <Compile Include="MDCDialogTransitionController.cs" />
+    <Compile Include="MDCEdgeTreatment.cs" />
+    <Compile Include="MDCFeatureHighlightAccessibilityMutator.cs" />
+    <Compile Include="MDCFeatureHighlightColorThemer.cs" />
+    <Compile Include="MDCFeatureHighlightColorThemer_ToBeDeprecated.cs" />
+    <Compile Include="MDCFeatureHighlightCompletion.cs" />
+    <Compile Include="MDCFeatureHighlightFontThemer.cs" />
+    <Compile Include="MDCFeatureHighlightTypographyThemer.cs" />
+    <Compile Include="MDCFeatureHighlightView.cs" />
+    <Compile Include="MDCFeatureHighlightViewController.cs" />
+    <Compile Include="MDCFilledTextFieldColorThemer.cs" />
+    <Compile Include="MDCFlatButton.cs" />
+    <Compile Include="MDCFlexibleHeaderChangeContentInsetsBlock.cs" />
+    <Compile Include="MDCFlexibleHeaderColorThemer.cs" />
+    <Compile Include="MDCFlexibleHeaderColorThemer_ToBeDeprecated.cs" />
+    <Compile Include="MDCFlexibleHeaderContainerViewController.cs" />
+    <Compile Include="MDCFlexibleHeaderShadowIntensityChangeBlock.cs" />
+    <Compile Include="MDCFlexibleHeaderView.cs" />
+    <Compile Include="MDCFlexibleHeaderViewController.cs" />
+    <Compile Include="MDCFlexibleHeaderViewController_ToBeDeprecated.cs" />
+    <Compile Include="MDCFlexibleHeaderViewDelegate.cs" />
+    <Compile Include="MDCFlexibleHeaderViewLayoutDelegate.cs" />
+    <Compile Include="MDCFlexibleHeaderView_.cs" />
+    <Compile Include="MDCFloatingActionButtonThemer.cs" />
+    <Compile Include="MDCFloatingButton.cs" />
+    <Compile Include="MDCFloatingButtonColorThemer.cs" />
+    <Compile Include="MDCFloatingButton_Animation.cs" />
+    <Compile Include="MDCFontScheme.cs" />
+    <Compile Include="MDCHeaderStackView.cs" />
+    <Compile Include="MDCHeaderStackViewColorThemer.cs" />
+    <Compile Include="MDCHeaderStackViewColorThemer_ToBeDeprecated.cs" />
+    <Compile Include="MDCIcons.cs" />
+    <Compile Include="MDCIcons_BundleLoader.cs" />
+    <Compile Include="MDCIcons_ic_arrow_back.cs" />
+    <Compile Include="MDCIcons_ic_check.cs" />
+    <Compile Include="MDCIcons_ic_check_circle.cs" />
+    <Compile Include="MDCIcons_ic_chevron_right.cs" />
+    <Compile Include="MDCIcons_ic_color_lens.cs" />
+    <Compile Include="MDCIcons_ic_help_outline.cs" />
+    <Compile Include="MDCIcons_ic_info.cs" />
+    <Compile Include="MDCIcons_ic_more_horiz.cs" />
+    <Compile Include="MDCIcons_ic_radio_button_unchecked.cs" />
+    <Compile Include="MDCIcons_ic_reorder.cs" />
+    <Compile Include="MDCIcons_ic_settings.cs" />
+    <Compile Include="MDCInkColorThemer.cs" />
+    <Compile Include="MDCInkColorThemer_ToBeDeprecated.cs" />
+    <Compile Include="MDCInkCompletionBlock.cs" />
+    <Compile Include="MDCInkGestureRecognizer.cs" />
+    <Compile Include="MDCInkTouchController.cs" />
+    <Compile Include="MDCInkTouchControllerDelegate.cs" />
+    <Compile Include="MDCInkView.cs" />
+    <Compile Include="MDCInkViewDelegate.cs" />
+    <Compile Include="MDCIntrinsicHeightTextView.cs" />
+    <Compile Include="MDCKeyboardWatcher.cs" />
+    <Compile Include="MDCLeadingViewTextInput.cs" />
+    <Compile Include="MDCLibraryInfo.cs" />
+    <Compile Include="MDCMaskedTransitionController.cs" />
+    <Compile Include="MDCMultilineTextField.cs" />
+    <Compile Include="MDCMultilineTextInput.cs" />
+    <Compile Include="MDCMultilineTextInputDelegate.cs" />
+    <Compile Include="MDCMultilineTextInputLayoutDelegate.cs" />
+    <Compile Include="MDCNavigationBar.cs" />
+    <Compile Include="MDCNavigationBarColorThemer.cs" />
+    <Compile Include="MDCNavigationBarColorThemer_ToBeDeprecated.cs" />
+    <Compile Include="MDCNavigationBarTextColorAccessibilityMutator.cs" />
+    <Compile Include="MDCNavigationBarTypographyThemer.cs" />
+    <Compile Include="MDCNumericValueLabel.cs" />
+    <Compile Include="MDCOutlinedButtonColorThemer.cs" />
+    <Compile Include="MDCOutlinedButtonThemer.cs" />
+    <Compile Include="MDCOutlinedTextFieldColorThemer.cs" />
+    <Compile Include="MDCOverlay.cs" />
+    <Compile Include="MDCOverlayObserver.cs" />
+    <Compile Include="MDCOverlayTransitioning.cs" />
+    <Compile Include="MDCOverlayWindow.cs" />
+    <Compile Include="MDCPageControl.cs" />
+    <Compile Include="MDCPageControlColorThemer.cs" />
+    <Compile Include="MDCPageControlColorThemer_ToBeDeprecated.cs" />
+    <Compile Include="MDCPalette.cs" />
+    <Compile Include="MDCPathGenerator.cs" />
+    <Compile Include="MDCPillShapeGenerator.cs" />
+    <Compile Include="MDCProgressView.cs" />
+    <Compile Include="MDCProgressViewColorThemer.cs" />
+    <Compile Include="MDCProgressViewColorThemer_ToBeDeprecated.cs" />
+    <Compile Include="MDCRaisedButton.cs" />
+    <Compile Include="MDCRectangleShapeGenerator.cs" />
+    <Compile Include="MDCRoundedCornerTreatment.cs" />
+    <Compile Include="MDCSemanticColorScheme.cs" />
+    <Compile Include="MDCShadowLayer.cs" />
+    <Compile Include="MDCShadowLayer_Subclassing.cs" />
+    <Compile Include="MDCShadowMetrics.cs" />
+    <Compile Include="MDCShapedShadowLayer.cs" />
+    <Compile Include="MDCShapedView.cs" />
+    <Compile Include="MDCShapeGenerating.cs" />
+    <Compile Include="MDCSlantedRectShapeGenerator.cs" />
+    <Compile Include="MDCSlider.cs" />
+    <Compile Include="MDCSliderColorThemer.cs" />
+    <Compile Include="MDCSliderColorThemer_ToBeDeprecated.cs" />
+    <Compile Include="MDCSliderDelegate.cs" />
+    <Compile Include="MDCSnackbarColorThemer.cs" />
+    <Compile Include="MDCSnackbarColorThemer_Deprecated.cs" />
+    <Compile Include="MDCSnackbarFontThemer.cs" />
+    <Compile Include="MDCSnackbarManager.cs" />
+    <Compile Include="MDCSnackbarManagerDelegate.cs" />
+    <Compile Include="MDCSnackbarManager_LegacyAPI.cs" />
+    <Compile Include="MDCSnackbarMessage.cs" />
+    <Compile Include="MDCSnackbarMessageAction.cs" />
+    <Compile Include="MDCSnackbarMessageActionHandler.cs" />
+    <Compile Include="MDCSnackbarMessageCompletionHandler.cs" />
+    <Compile Include="MDCSnackbarMessageView.cs" />
+    <Compile Include="MDCSnackbarMessageView_.cs" />
+    <Compile Include="MDCSnackbarSuspensionToken.cs" />
+    <Compile Include="MDCSnackbarTypographyThemer.cs" />
+    <Compile Include="MDCSystemFontLoader.cs" />
+    <Compile Include="MDCTabBar.cs" />
+    <Compile Include="MDCTabBarColorThemer.cs" />
+    <Compile Include="MDCTabBarColorThemer_ToBeDeprecated.cs" />
+    <Compile Include="MDCTabBarControllerDelegate.cs" />
+    <Compile Include="MDCTabBarDelegate.cs" />
+    <Compile Include="MDCTabBarFontThemer.cs" />
+    <Compile Include="MDCTabBarIndicatorAttributes.cs" />
+    <Compile Include="MDCTabBarIndicatorContext.cs" />
+    <Compile Include="MDCTabBarIndicatorTemplate.cs" />
+    <Compile Include="MDCTabBarTypographyThemer.cs" />
+    <Compile Include="MDCTabBarUnderlineIndicatorTemplate.cs" />
+    <Compile Include="MDCTabBarViewController.cs" />
+    <Compile Include="MDCTabBar_MDCAccessibility.cs" />
+    <Compile Include="MDCTextButtonColorThemer.cs" />
+    <Compile Include="MDCTextButtonThemer.cs" />
+    <Compile Include="MDCTextField.cs" />
+    <Compile Include="MDCTextFieldColorThemer.cs" />
+    <Compile Include="MDCTextFieldColorThemer_ToBeDeprecated.cs" />
+    <Compile Include="MDCTextFieldFontThemer.cs" />
+    <Compile Include="MDCTextFieldTypographyThemer.cs" />
+    <Compile Include="MDCTextInput.cs" />
+    <Compile Include="MDCTextInputAllCharactersCounter.cs" />
+    <Compile Include="MDCTextInputBorderView.cs" />
+    <Compile Include="MDCTextInputCharacterCounter.cs" />
+    <Compile Include="MDCTextInputController.cs" />
+    <Compile Include="MDCTextInputControllerBase.cs" />
+    <Compile Include="MDCTextInputControllerFilled.cs" />
+    <Compile Include="MDCTextInputControllerFloatingPlaceholder.cs" />
+    <Compile Include="MDCTextInputControllerFullWidth.cs" />
+    <Compile Include="MDCTextInputControllerLegacyDefault.cs" />
+    <Compile Include="MDCTextInputControllerLegacyFullWidth.cs" />
+    <Compile Include="MDCTextInputControllerOutlined.cs" />
+    <Compile Include="MDCTextInputControllerOutlinedTextArea.cs" />
+    <Compile Include="MDCTextInputControllerUnderline.cs" />
+    <Compile Include="MDCTextInputPositioningDelegate.cs" />
+    <Compile Include="MDCTextInputUnderlineView.cs" />
+    <Compile Include="MDCThumbTrack.cs" />
+    <Compile Include="MDCThumbTrackDelegate.cs" />
+    <Compile Include="MDCThumbView.cs" />
+    <Compile Include="MDCTonalColorScheme.cs" />
+    <Compile Include="MDCTonalPalette.cs" />
+    <Compile Include="MDCTriangleEdgeTreatment.cs" />
+    <Compile Include="MDCTypography.cs" />
+    <Compile Include="MDCTypographyFontLoading.cs" />
+    <Compile Include="MDCTypographyScheme.cs" />
+    <Compile Include="MDCTypographyScheming.cs" />
+    <Compile Include="MDCUINavigationItemObservables.cs" />
+    <Compile Include="MDFTextAccessibility.cs" />
+    <Compile Include="MDMAnimationTraits.cs" />
+    <Compile Include="MDMAnimationTraits_Legacy.cs" />
+    <Compile Include="MDMAnimationTraits_SystemTraits.cs" />
+    <Compile Include="MDMCoreAnimationTraceable.cs" />
+    <Compile Include="MDMMotionAnimator.cs" />
+    <Compile Include="MDMMotionAnimator_ImplicitLayerAnimations.cs" />
+    <Compile Include="MDMMotionAnimator_Legacy.cs" />
+    <Compile Include="MDMMotionAnimator_UIKitEquivalency.cs" />
+    <Compile Include="MDMRepetition.cs" />
+    <Compile Include="MDMRepetitionOverTime.cs" />
+    <Compile Include="MDMRepetitionTraits.cs" />
+    <Compile Include="MDMSpringTimingCurve.cs" />
+    <Compile Include="MDMSpringTimingCurveGenerator.cs" />
+    <Compile Include="MDMTimingCurve.cs" />
+    <Compile Include="MDMTransition.cs" />
+    <Compile Include="MDMTransitionContext.cs" />
+    <Compile Include="MDMTransitionController.cs" />
+    <Compile Include="MDMTransitionFrameCalculation.cs" />
+    <Compile Include="MDMTransitionNavigationControllerDelegate.cs" />
+    <Compile Include="MDMTransitionPresentationAnimationControlling.cs" />
+    <Compile Include="MDMTransitionPresentationController.cs" />
+    <Compile Include="MDMTransitionViewSnapshotter.cs" />
+    <Compile Include="MDMTransitionWithCustomDuration.cs" />
+    <Compile Include="MDMTransitionWithFallback.cs" />
+    <Compile Include="MDMTransitionWithFeasibility.cs" />
+    <Compile Include="MDMTransitionWithPresentation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UIApplication_AppExtensions.cs" />
+    <Compile Include="UICollectionViewController_MDCCardReordering.cs" />
+    <Compile Include="UIFontDescriptor_MaterialTypography.cs" />
+    <Compile Include="UIFont_MaterialSimpleEquality.cs" />
+    <Compile Include="UIFont_MaterialTypography.cs" />
+    <Compile Include="UIViewController_MaterialBottomSheet.cs" />
+    <Compile Include="UIViewController_MaterialDialogs.cs" />
+    <Compile Include="UIViewController_MDMTransitionController.cs" />
+    <Compile Include="UIView_MDCTimingFunction.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>

@@ -1,0 +1,1 @@
+﻿delegate void MDCActionHandler (MDCAlertAction arg0);

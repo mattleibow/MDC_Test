@@ -1,0 +1,1 @@
+﻿delegate void MDCFeatureHighlightCompletion (bool arg0);
