@@ -4,7 +4,7 @@ using ObjCRuntime;
 using UIKit;
 
 [BaseType (typeof(UIControl))]
-interface MDCSlider : INSSecureCoding
+interface MDCSlider
 {
     // @property (getter = isStatefulAPIEnabled, assign, nonatomic) BOOL statefulAPIEnabled;
     [Export ("statefulAPIEnabled")]

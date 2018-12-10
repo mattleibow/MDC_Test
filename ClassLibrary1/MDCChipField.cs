@@ -18,6 +18,10 @@ interface MDCChipField
     [Export ("showPlaceholderWithChips")]
     bool ShowPlaceholderWithChips { get; set; }
 
+    // @property (nonatomic) BOOL showChipsDeleteButton;
+    [Export ("showChipsDeleteButton")]
+    bool ShowChipsDeleteButton { get; set; }
+
     // @property (assign, nonatomic) MDCChipFieldDelimiter delimiter;
     [Export ("delimiter", ArgumentSemantic.Assign)]
     MDCChipFieldDelimiter Delimiter { get; set; }

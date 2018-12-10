@@ -19,13 +19,4 @@ interface MDCShapedView
     [Export ("initWithFrame:shapeGenerator:")]
     [DesignatedInitializer]
     IntPtr Constructor (CGRect frame, [NullAllowed] MDCShapeGenerating shapeGenerator);
-
-    // -(instancetype _Nonnull)initWithFrame:(CGRect)frame;
-    [Export ("initWithFrame:")]
-    IntPtr Constructor (CGRect frame);
-
-    // -(instancetype _Nullable)initWithCoder:(NSCoder * _Nullable)aDecoder __attribute__((objc_designated_initializer));
-    [Export ("initWithCoder:")]
-    [DesignatedInitializer]
-    IntPtr Constructor ([NullAllowed] NSCoder aDecoder);
 }

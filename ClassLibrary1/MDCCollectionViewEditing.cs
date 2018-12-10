@@ -44,5 +44,10 @@ interface MDCCollectionViewEditing
     // @required -(void)setEditing:(BOOL)editing animated:(BOOL)animated;
     [Abstract]
     [Export ("setEditing:animated:")]
-    void Animated (bool editing, bool animated);
+    void SetEditing (bool editing, bool animated);
+
+    // @required -(void)updateReorderCellPosition;
+    [Abstract]
+    [Export ("updateReorderCellPosition")]
+    void UpdateReorderCellPosition ();
 }

@@ -5,8 +5,11 @@ using UIKit;
 [BaseType (typeof(NSObject))]
 interface MDCButtonBarDelegate
 {
-    // @required -(UIView * _Nonnull)buttonBar:(MDCButtonBar * _Nonnull)buttonBar viewForItem:(UIBarButtonItem * _Nonnull)barButtonItem layoutHints:(MDCBarButtonItemLayoutHints)layoutHints;
-    [Abstract]
+    // @optional -(void)buttonBarDidInvalidateIntrinsicContentSize:(MDCButtonBar * _Nonnull)buttonBar;
+    [Export ("buttonBarDidInvalidateIntrinsicContentSize:")]
+    void ButtonBarDidInvalidateIntrinsicContentSize (MDCButtonBar buttonBar);
+
+    // @optional -(UIView * _Nonnull)buttonBar:(MDCButtonBar * _Nonnull)buttonBar viewForItem:(UIBarButtonItem * _Nonnull)barButtonItem layoutHints:(MDCBarButtonItemLayoutHints)layoutHints __attribute__((deprecated("There will be no replacement for this API.")));
     [Export ("buttonBar:viewForItem:layoutHints:")]
-    UIView ViewForItem (MDCButtonBar buttonBar, UIBarButtonItem barButtonItem, MDCBarButtonItemLayoutHints layoutHints);
+    UIView ButtonBar (MDCButtonBar buttonBar, UIBarButtonItem barButtonItem, MDCBarButtonItemLayoutHints layoutHints);
 }

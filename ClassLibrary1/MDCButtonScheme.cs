@@ -9,6 +9,10 @@ interface MDCButtonScheme : IMDCButtonScheming
     [Export ("colorScheme", ArgumentSemantic.Assign)]
     MDCColorScheming ColorScheme { get; set; }
 
+    // @property (readwrite, nonatomic) id<MDCShapeScheming> _Nonnull shapeScheme;
+    [Export ("shapeScheme", ArgumentSemantic.Assign)]
+    MDCShapeScheming ShapeScheme { get; set; }
+
     // @property (readwrite, nonatomic) id<MDCTypographyScheming> _Nonnull typographyScheme;
     [Export ("typographyScheme", ArgumentSemantic.Assign)]
     MDCTypographyScheming TypographyScheme { get; set; }

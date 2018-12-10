@@ -14,9 +14,4 @@ interface MDCCurvedCornerTreatment
     [Export ("initWithSize:")]
     [DesignatedInitializer]
     IntPtr Constructor (CGSize size);
-
-    // -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)aDecoder __attribute__((objc_designated_initializer));
-    [Export ("initWithCoder:")]
-    [DesignatedInitializer]
-    IntPtr Constructor (NSCoder aDecoder);
 }

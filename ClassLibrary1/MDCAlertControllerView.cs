@@ -1,4 +1,5 @@
-﻿using Foundation;
+﻿using System;
+using Foundation;
 using ObjCRuntime;
 using UIKit;
 
@@ -12,6 +13,18 @@ interface MDCAlertControllerView
     // @property (nonatomic, strong) UIColor * _Nullable titleColor __attribute__((annotate("ui_appearance_selector")));
     [NullAllowed, Export ("titleColor", ArgumentSemantic.Strong)]
     UIColor TitleColor { get; set; }
+
+    // @property (assign, nonatomic) NSTextAlignment titleAlignment;
+    [Export ("titleAlignment", ArgumentSemantic.Assign)]
+    NSTextAlignment TitleAlignment { get; set; }
+
+    // @property (nonatomic, strong) UIImage * _Nullable titleIcon;
+    [NullAllowed, Export ("titleIcon", ArgumentSemantic.Strong)]
+    UIImage TitleIcon { get; set; }
+
+    // @property (nonatomic, strong) UIColor * _Nullable titleIconTintColor;
+    [NullAllowed, Export ("titleIconTintColor", ArgumentSemantic.Strong)]
+    UIColor TitleIconTintColor { get; set; }
 
     // @property (nonatomic, strong) UIFont * _Nullable messageFont __attribute__((annotate("ui_appearance_selector")));
     [NullAllowed, Export ("messageFont", ArgumentSemantic.Strong)]
@@ -28,6 +41,14 @@ interface MDCAlertControllerView
     // @property (nonatomic, strong) UIColor * _Nullable buttonColor __attribute__((annotate("ui_appearance_selector")));
     [NullAllowed, Export ("buttonColor", ArgumentSemantic.Strong)]
     UIColor ButtonColor { get; set; }
+
+    // @property (nonatomic, strong) UIColor * _Nullable buttonInkColor __attribute__((annotate("ui_appearance_selector")));
+    [NullAllowed, Export ("buttonInkColor", ArgumentSemantic.Strong)]
+    UIColor ButtonInkColor { get; set; }
+
+    // @property (assign, nonatomic) CGFloat cornerRadius;
+    [Export ("cornerRadius")]
+    nfloat CornerRadius { get; set; }
 
     // @property (readwrite, nonatomic, setter = mdc_setAdjustsFontForContentSizeCategory:) BOOL mdc_adjustsFontForContentSizeCategory __attribute__((annotate("ui_appearance_selector")));
     [Export ("mdc_adjustsFontForContentSizeCategory")]

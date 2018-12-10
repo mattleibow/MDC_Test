@@ -21,6 +21,10 @@ interface MDCNavigationBar
     [Export ("titleFont", ArgumentSemantic.Strong)]
     UIFont TitleFont { get; set; }
 
+    // @property (nonatomic) BOOL allowAnyTitleFontSize;
+    [Export ("allowAnyTitleFontSize")]
+    bool AllowAnyTitleFontSize { get; set; }
+
     // @property (nonatomic, strong) UIColor * _Nullable titleTextColor;
     [NullAllowed, Export ("titleTextColor", ArgumentSemantic.Strong)]
     UIColor TitleTextColor { get; set; }
@@ -28,6 +32,10 @@ interface MDCNavigationBar
     // @property (nonatomic, strong) UIColor * _Nullable inkColor;
     [NullAllowed, Export ("inkColor", ArgumentSemantic.Strong)]
     UIColor InkColor { get; set; }
+
+    // @property (nonatomic) BOOL uppercasesButtonTitles;
+    [Export ("uppercasesButtonTitles")]
+    bool UppercasesButtonTitles { get; set; }
 
     // -(void)setButtonsTitleFont:(UIFont * _Nullable)font forState:(UIControlState)state;
     [Export ("setButtonsTitleFont:forState:")]
@@ -41,6 +49,14 @@ interface MDCNavigationBar
     // -(void)setButtonsTitleColor:(UIColor * _Nullable)color forState:(UIControlState)state;
     [Export ("setButtonsTitleColor:forState:")]
     void SetButtonsTitleColor ([NullAllowed] UIColor color, UIControlState state);
+
+    // @property (nonatomic, strong) UIColor * _Nullable leadingBarItemsTintColor;
+    [NullAllowed, Export ("leadingBarItemsTintColor", ArgumentSemantic.Strong)]
+    UIColor LeadingBarItemsTintColor { get; set; }
+
+    // @property (nonatomic, strong) UIColor * _Nullable trailingBarItemsTintColor;
+    [NullAllowed, Export ("trailingBarItemsTintColor", ArgumentSemantic.Strong)]
+    UIColor TrailingBarItemsTintColor { get; set; }
 
     // -(UIColor * _Nullable)buttonsTitleColorForState:(UIControlState)state;
     [Export ("buttonsTitleColorForState:")]

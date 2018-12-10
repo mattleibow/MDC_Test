@@ -92,6 +92,10 @@ interface MDCFlexibleHeaderView
     [Export ("visibleShadowOpacity")]
     float VisibleShadowOpacity { get; set; }
 
+    // @property (nonatomic) BOOL resetShadowAfterTrackingScrollViewIsReset;
+    [Export ("resetShadowAfterTrackingScrollViewIsReset")]
+    bool ResetShadowAfterTrackingScrollViewIsReset { get; set; }
+
     // @property (nonatomic, weak) UIScrollView * _Nullable trackingScrollView;
     [NullAllowed, Export ("trackingScrollView", ArgumentSemantic.Weak)]
     UIScrollView TrackingScrollView { get; set; }
@@ -107,6 +111,11 @@ interface MDCFlexibleHeaderView
     // @property (nonatomic) BOOL sharedWithManyScrollViews;
     [Export ("sharedWithManyScrollViews")]
     bool SharedWithManyScrollViews { get; set; }
+
+    // @property (nonatomic) BOOL disableContentInsetAdjustmentWhenContentInsetAdjustmentBehaviorIsNever __attribute__((availability(tvos, introduced=11.0))) __attribute__((availability(ios, introduced=11.0)));
+    [TV (11, 0), iOS (11, 0)]
+    [Export ("disableContentInsetAdjustmentWhenContentInsetAdjustmentBehaviorIsNever")]
+    bool DisableContentInsetAdjustmentWhenContentInsetAdjustmentBehaviorIsNever { get; set; }
 
     [Wrap ("WeakDelegate")]
     [NullAllowed]

@@ -29,6 +29,14 @@ interface MDCSnackbarMessageView
     [NullAllowed, Export ("actionButtons", ArgumentSemantic.Strong)]
     NSMutableArray<MDCButton> ActionButtons { get; set; }
 
+    // @property (copy, nonatomic) NSString * _Nullable accessibilityLabel;
+    [NullAllowed, Export ("accessibilityLabel")]
+    string AccessibilityLabel { get; set; }
+
+    // @property (copy, nonatomic) NSString * _Nullable accessibilityHint;
+    [NullAllowed, Export ("accessibilityHint")]
+    string AccessibilityHint { get; set; }
+
     // -(UIColor * _Nullable)buttonTitleColorForState:(UIControlState)state __attribute__((annotate("ui_appearance_selector")));
     [Export ("buttonTitleColorForState:")]
     [return: NullAllowed]

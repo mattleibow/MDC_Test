@@ -65,4 +65,13 @@ interface MDCBottomNavigationBar
     // @property (assign, nonatomic) CGFloat itemsContentHorizontalMargin;
     [Export ("itemsContentHorizontalMargin")]
     nfloat ItemsContentHorizontalMargin { get; set; }
+
+    // @property (assign, nonatomic) MDCShadowElevation elevation;
+    [Export ("elevation")]
+    double Elevation { get; set; }
+
+    // -(UIView * _Nullable)viewForItem:(UITabBarItem * _Nonnull)item;
+    [Export ("viewForItem:")]
+    [return: NullAllowed]
+    UIView ViewForItem (UITabBarItem item);
 }

@@ -2,7 +2,7 @@
 using Foundation;
 
 [Protocol, Model]
-interface MDCShapeGenerating : INSCopying, INSSecureCoding
+interface MDCShapeGenerating : INSCopying
 {
     // @required -(CGPathRef _Nullable)pathForSize:(CGSize)size;
     [Abstract]

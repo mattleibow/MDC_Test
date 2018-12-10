@@ -87,6 +87,10 @@ interface MDCSnackbarManager
     [Export ("mdc_adjustsFontForContentSizeCategory")]
     bool Mdc_adjustsFontForContentSizeCategory { get; [Bind ("mdc_setAdjustsFontForContentSizeCategory:")] set; }
 
+    // @property (assign, nonatomic) BOOL shouldEnableAccessibilityViewIsModal;
+    [Export ("shouldEnableAccessibilityViewIsModal")]
+    bool ShouldEnableAccessibilityViewIsModal { get; set; }
+
     [Wrap ("WeakDelegate")]
     [NullAllowed]
     MDCSnackbarManagerDelegate Delegate { get; set; }

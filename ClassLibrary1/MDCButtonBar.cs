@@ -7,6 +7,14 @@ using UIKit;
 [BaseType (typeof(UIView))]
 interface MDCButtonBar
 {
+    [Wrap ("WeakDelegate")]
+    [NullAllowed]
+    MDCButtonBarDelegate Delegate { get; set; }
+
+    // @property (nonatomic, weak) id<MDCButtonBarDelegate> _Nullable delegate;
+    [NullAllowed, Export ("delegate", ArgumentSemantic.Weak)]
+    NSObject WeakDelegate { get; set; }
+
     // @property (copy, nonatomic) NSArray<UIBarButtonItem *> * _Nullable items;
     [NullAllowed, Export ("items", ArgumentSemantic.Copy)]
     UIBarButtonItem[] Items { get; set; }
@@ -14,6 +22,10 @@ interface MDCButtonBar
     // @property (nonatomic) CGFloat buttonTitleBaseline;
     [Export ("buttonTitleBaseline")]
     nfloat ButtonTitleBaseline { get; set; }
+
+    // @property (nonatomic) BOOL uppercasesButtonTitles;
+    [Export ("uppercasesButtonTitles")]
+    bool UppercasesButtonTitles { get; set; }
 
     // -(void)setButtonsTitleFont:(UIFont * _Nullable)font forState:(UIControlState)state;
     [Export ("setButtonsTitleFont:forState:")]

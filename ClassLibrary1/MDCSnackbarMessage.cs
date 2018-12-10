@@ -52,6 +52,10 @@ interface MDCSnackbarMessage : INSCopying, IUIAccessibilityIdentification
     [NullAllowed, Export ("accessibilityLabel")]
     string AccessibilityLabel { get; set; }
 
+    // @property (copy, nonatomic) NSString * _Nullable accessibilityHint;
+    [NullAllowed, Export ("accessibilityHint")]
+    string AccessibilityHint { get; set; }
+
     // @property (readonly, nonatomic) NSString * _Nullable voiceNotificationText;
     [NullAllowed, Export ("voiceNotificationText")]
     string VoiceNotificationText { get; }

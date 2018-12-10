@@ -45,11 +45,6 @@ interface MDCFloatingButton
     [Export ("initWithFrame:")]
     IntPtr Constructor (CGRect frame);
 
-    // -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)aDecoder __attribute__((objc_designated_initializer));
-    [Export ("initWithCoder:")]
-    [DesignatedInitializer]
-    IntPtr Constructor (NSCoder aDecoder);
-
     // -(void)setMinimumSize:(CGSize)minimumSize forShape:(MDCFloatingButtonShape)shape inMode:(MDCFloatingButtonMode)mode __attribute__((annotate("ui_appearance_selector")));
     [Export ("setMinimumSize:forShape:inMode:")]
     void SetMinimumSize (CGSize minimumSize, MDCFloatingButtonShape shape, MDCFloatingButtonMode mode);

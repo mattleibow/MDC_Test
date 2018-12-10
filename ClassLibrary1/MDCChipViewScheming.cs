@@ -8,6 +8,11 @@ interface MDCChipViewScheming
     [Export ("colorScheme")]
     MDCColorScheming ColorScheme { get; }
 
+    // @required @property (readonly, nonatomic) id<MDCShapeScheming> _Nonnull shapeScheme;
+    [Abstract]
+    [Export ("shapeScheme")]
+    MDCShapeScheming ShapeScheme { get; }
+
     // @required @property (readonly, nonatomic) id<MDCTypographyScheming> _Nonnull typographyScheme;
     [Abstract]
     [Export ("typographyScheme")]

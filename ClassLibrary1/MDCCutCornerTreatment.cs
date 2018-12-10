@@ -13,9 +13,4 @@ interface MDCCutCornerTreatment
     [Export ("initWithCut:")]
     [DesignatedInitializer]
     IntPtr Constructor (nfloat cut);
-
-    // -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)aDecoder __attribute__((objc_designated_initializer));
-    [Export ("initWithCoder:")]
-    [DesignatedInitializer]
-    IntPtr Constructor (NSCoder aDecoder);
 }

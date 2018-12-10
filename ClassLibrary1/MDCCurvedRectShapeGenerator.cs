@@ -14,9 +14,4 @@ interface MDCCurvedRectShapeGenerator : IMDCShapeGenerating
     [Export ("initWithCornerSize:")]
     [DesignatedInitializer]
     IntPtr Constructor (CGSize cornerSize);
-
-    // -(instancetype)initWithCoder:(NSCoder *)aDecoder __attribute__((objc_designated_initializer));
-    [Export ("initWithCoder:")]
-    [DesignatedInitializer]
-    IntPtr Constructor (NSCoder aDecoder);
 }

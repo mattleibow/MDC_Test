@@ -5,7 +5,7 @@ using UIKit;
 
 [BaseType (typeof(NSObject))]
 [DisableDefaultCtor]
-interface MDCTonalPalette : INSCopying, INSSecureCoding
+interface MDCTonalPalette : INSCopying
 {
     // @property (readonly, copy, nonatomic) NSArray<UIColor *> * _Nonnull colors;
     [Export ("colors", ArgumentSemantic.Copy)]
@@ -39,9 +39,4 @@ interface MDCTonalPalette : INSCopying, INSSecureCoding
     [Export ("initWithColors:mainColorIndex:lightColorIndex:darkColorIndex:")]
     [DesignatedInitializer]
     IntPtr Constructor (UIColor[] colors, nuint mainColorIndex, nuint lightColorIndex, nuint darkColorIndex);
-
-    // -(instancetype _Nonnull)initWithCoder:(NSCoder * _Nonnull)coder __attribute__((objc_designated_initializer));
-    [Export ("initWithCoder:")]
-    [DesignatedInitializer]
-    IntPtr Constructor (NSCoder coder);
 }

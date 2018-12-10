@@ -28,7 +28,7 @@ using UIKit;
 
 // @interface MDCTonalColorScheme : NSObject <MDCColorScheme, NSCopying>
 
-// @interface MDCTonalPalette : NSObject <NSCopying, NSSecureCoding>
+// @interface MDCTonalPalette : NSObject <NSCopying>
 
 // @protocol MDCColorScheming
 
@@ -38,11 +38,53 @@ using UIKit;
 
 // @interface ToBeDeprecated (MDCActivityIndicatorColorThemer)
 
+// @interface MDCInkGestureRecognizer : UIGestureRecognizer
+
+// @interface MDCInkTouchController : NSObject <UIGestureRecognizerDelegate>
+
+// @protocol MDCInkTouchControllerDelegate <NSObject>
+
+// typedef void (^MDCInkCompletionBlock)();
+
+// @interface MDCInkView : UIView
+
+// @protocol MDCInkViewDelegate <NSObject>
+
+// @interface MDCCornerTreatment : NSObject <NSCopying>
+
+// @interface MDCEdgeTreatment : NSObject <NSCopying>
+
+// @interface MDCPathGenerator : NSObject
+
+// @protocol MDCShapeGenerating <NSCopying>
+
+// @interface MDCRectangleShapeGenerator : NSObject <MDCShapeGenerating>
+
+// @interface MDCShadowMetrics : NSObject
+
+// @interface MDCShadowLayer : CALayer
+
+// @interface Subclassing (MDCShadowLayer) <CALayerDelegate>
+
+// @interface MDCShapedShadowLayer : MDCShadowLayer
+
+// @interface MDCShapedView : UIView
+
+// @interface MDCButton : UIButton
+
+// @interface MDCFlatButton : MDCButton
+
+// @interface MDCFloatingButton : MDCButton
+
+// @interface Animation (MDCFloatingButton)
+
+// @interface MDCRaisedButton : MDCButton
+
 // @interface MDCAlertController : UIViewController
 
 // typedef void (^MDCActionHandler)(MDCAlertAction * _Nonnull);
 
-// @interface MDCAlertAction : NSObject <NSCopying>
+// @interface MDCAlertAction : NSObject <NSCopying, UIAccessibilityIdentification>
 
 // @interface MDCAlertControllerView : UIView
 
@@ -56,6 +98,14 @@ using UIKit;
 
 // @interface ToBeDeprecated (MDCAlertColorThemer)
 
+// @interface ButtonForAction (MDCAlertController)
+
+// @interface MDCShapeCategory : NSObject
+
+// @protocol MDCShapeScheming
+
+// @interface MDCShapeScheme : NSObject <MDCShapeScheming>
+
 // @protocol MDCFontScheme <NSObject>
 
 // @interface MDCBasicFontScheme : NSObject <MDCFontScheme>
@@ -63,6 +113,24 @@ using UIKit;
 // @protocol MDCTypographyScheming
 
 // @interface MDCTypographyScheme : NSObject <MDCTypographyScheming>
+
+// @protocol MDCButtonScheming
+
+// @interface MDCButtonScheme : NSObject <MDCButtonScheming>
+
+// @interface MDCContainedButtonThemer : NSObject
+
+// @interface MDCFloatingActionButtonThemer : NSObject
+
+// @interface MDCTextButtonThemer : NSObject
+
+// @interface MDCOutlinedButtonThemer : NSObject
+
+// @protocol MDCAlertScheming
+
+// @interface MDCAlertScheme : NSObject <MDCAlertScheming>
+
+// @interface MDCAlertControllerThemer : NSObject
 
 // @interface MDCAlertTypographyThemer : NSObject
 
@@ -160,8 +228,6 @@ interface MDCFlexibleHeaderView_
 
 // @interface MDCAppBar : NSObject
 
-// @interface MDCAppBarTextColorAccessibilityMutator : NSObject
-
 // @interface MDCAppBarContainerViewController : UIViewController
 
 // @protocol MDCAppBarNavigationControllerDelegate <UINavigationControllerDelegate>
@@ -176,55 +242,29 @@ interface MDCFlexibleHeaderView_
 
 // @interface MDCAppBarTypographyThemer : NSObject
 
+// @interface ToBeDeprecated (MDCAppBarTypographyThemer)
+
 // @interface MDCBaseCell : UICollectionViewCell
-
-// @interface MDCInkGestureRecognizer : UIGestureRecognizer
-
-// @interface MDCInkTouchController : NSObject <UIGestureRecognizerDelegate>
-
-// @protocol MDCInkTouchControllerDelegate <NSObject>
-
-// typedef void (^MDCInkCompletionBlock)();
-
-// @interface MDCInkView : UIView
-
-// @protocol MDCInkViewDelegate <NSObject>
-
-// @interface MDCCornerTreatment : NSObject <NSCopying, NSSecureCoding>
-
-// @interface MDCEdgeTreatment : NSObject <NSCopying, NSSecureCoding>
-
-// @interface MDCPathGenerator : NSObject
-
-// @protocol MDCShapeGenerating <NSCopying, NSSecureCoding>
-
-// @interface MDCRectangleShapeGenerator : NSObject <MDCShapeGenerating>
-
-// @interface MDCShadowMetrics : NSObject
-
-// @interface MDCShadowLayer : CALayer
-
-// @interface Subclassing (MDCShadowLayer) <CALayerDelegate>
-
-// @interface MDCShapedShadowLayer : MDCShadowLayer
-
-// @interface MDCShapedView : UIView
-
-// @interface MDCButton : UIButton
-
-// @interface MDCFlatButton : MDCButton
-
-// @interface MDCFloatingButton : MDCButton
-
-// @interface Animation (MDCFloatingButton)
-
-// @interface MDCRaisedButton : MDCButton
 
 // @interface MDCBottomAppBarView : UIView
 
 // @interface MDCBottomAppBarColorThemer : NSObject
 
 // @interface ToBeDeprecated (MDCBottomAppBarColorThemer)
+
+// @protocol MDCBottomDrawerHeader
+
+// @protocol MDCBottomDrawerPresentationControllerDelegate <UIAdaptivePresentationControllerDelegate>
+
+// @interface MDCBottomDrawerPresentationController : UIPresentationController
+
+// @interface MDCBottomDrawerViewController : UIViewController <MDCBottomDrawerPresentationControllerDelegate>
+
+// @protocol MDCBottomDrawerViewControllerDelegate <NSObject>
+
+// @interface MDCBottomDrawerTransitionController : NSObject <UIViewControllerAnimatedTransitioning, UIViewControllerTransitioningDelegate>
+
+// @interface MDCBottomDrawerColorThemer : NSObject
 
 // @interface MDCBottomNavigationBar : UIView
 
@@ -248,6 +288,26 @@ interface MDCFlexibleHeaderView_
 
 // @interface ScrimAccessibility (MDCBottomSheetTransitionController)
 
+// @interface MaterialBottomSheet (UIViewController)
+
+// @interface MDCCurvedCornerTreatment : MDCCornerTreatment
+
+// @interface MDCCutCornerTreatment : MDCCornerTreatment
+
+// @interface MDCRoundedCornerTreatment : MDCCornerTreatment
+
+// @interface CornerTypeInitalizer (MDCCornerTreatment)
+
+// @interface MDCCurvedRectShapeGenerator : NSObject <MDCShapeGenerating>
+
+// @interface MDCPillShapeGenerator : NSObject <MDCShapeGenerating>
+
+// @interface MDCSlantedRectShapeGenerator : NSObject <MDCShapeGenerating>
+
+// @interface MDCTriangleEdgeTreatment : MDCEdgeTreatment
+
+// @interface MDCBottomSheetControllerShapeThemer : NSObject
+
 // @interface MDCButtonBar : UIView
 
 // @protocol MDCButtonBarDelegate <NSObject>
@@ -264,9 +324,7 @@ interface MDCFlexibleHeaderView_
 
 // @interface ToBeDeprecated (MDCButtonColorThemer)
 
-// @protocol MDCButtonScheming
-
-// @interface MDCButtonScheme : NSObject <MDCButtonScheming>
+// @interface MDCButtonShapeThemer : NSObject
 
 // @interface MDCButtonTitleColorAccessibilityMutator : NSObject
 
@@ -283,6 +341,8 @@ interface MDCFlexibleHeaderView_
 // @interface MDCCardThemer : NSObject
 
 // @interface MDCCardsColorThemer : NSObject
+
+// @interface MDCCardsShapeThemer : NSObject
 
 // @interface MDCChipCollectionViewCell : UICollectionViewCell
 
@@ -303,19 +363,6 @@ interface MDCFlexibleHeaderView_
 // @protocol MDCMultilineTextInputLayoutDelegate <NSObject>
 
 // @protocol MDCMultilineTextInputDelegate <NSObject>
-
-[Static]
-[Verify (ConstantsInterfaceAssociation)]
-partial interface Constants
-{
-	// extern NSString *const _Nonnull MDCTextFieldTextDidSetTextNotification;
-	[Field ("MDCTextFieldTextDidSetTextNotification", "__Internal")]
-	NSString MDCTextFieldTextDidSetTextNotification { get; }
-
-	// extern NSString *const _Nonnull MDCTextInputDidToggleEnabledNotification;
-	[Field ("MDCTextInputDidToggleEnabledNotification", "__Internal")]
-	NSString MDCTextInputDidToggleEnabledNotification { get; }
-}
 
 // @interface MDCTextField : UITextField <MDCTextInput, MDCLeadingViewTextInput>
 
@@ -382,6 +429,8 @@ partial interface Constants
 // @protocol MDCChipViewScheming
 
 // @interface MDCChipViewScheme : NSObject <MDCChipViewScheming>
+
+// @interface MDCChipViewShapeThemer : NSObject
 
 // @interface MDCChipViewThemer : NSObject
 
@@ -450,14 +499,6 @@ partial interface Constants
 
 // @interface MDCContainedButtonColorThemer : NSObject
 
-// @interface MDCContainedButtonThemer : NSObject
-
-// @interface MDCCurvedCornerTreatment : MDCCornerTreatment
-
-// @interface MDCCurvedRectShapeGenerator : NSObject <MDCShapeGenerating>
-
-// @interface MDCCutCornerTreatment : MDCCornerTreatment
-
 // @interface MDFTextAccessibility : NSObject
 
 // @interface MDCFeatureHighlightAccessibilityMutator : NSObject
@@ -491,9 +532,19 @@ partial interface Constants
 
 // @interface ToBeDeprecated (MDCFlexibleHeaderColorThemer)
 
-// @interface MDCFloatingActionButtonThemer : NSObject
+// @interface  (MDCFlexibleHeaderView)
+[Category]
+[BaseType (typeof(MDCFlexibleHeaderView))]
+interface MDCFlexibleHeaderView_
+{
+	// @property (nonatomic) BOOL canAlwaysExpandToMaximumHeight;
+	[Export ("canAlwaysExpandToMaximumHeight")]
+	bool CanAlwaysExpandToMaximumHeight { get; set; }
+}
 
 // @interface MDCFloatingButtonColorThemer : NSObject
+
+// @interface MDCFloatingButtonShapeThemer : NSObject
 
 // @interface MDCHeaderStackViewColorThemer : NSObject
 
@@ -528,6 +579,18 @@ partial interface Constants
 
 // @interface MDCLibraryInfo : NSObject
 
+// @interface MDCSelfSizingStereoCell : MDCBaseCell
+
+// @interface MDCListColorThemer : NSObject
+
+// @protocol MDCListScheming
+
+// @interface MDCListScheme : NSObject <MDCListScheming>
+
+// @interface MDCListThemer : NSObject
+
+// @interface MDCListTypographyThemer : NSObject
+
 // @interface MDCMaskedTransitionController : NSObject <UIViewControllerTransitioningDelegate>
 
 // @interface MDCNavigationBarColorThemer : NSObject
@@ -539,8 +602,6 @@ partial interface Constants
 // @interface MDCNumericValueLabel : UIView
 
 // @interface MDCOutlinedButtonColorThemer : NSObject
-
-// @interface MDCOutlinedButtonThemer : NSObject
 
 // @interface MDCOutlinedTextFieldColorThemer : NSObject
 
@@ -621,19 +682,13 @@ partial interface Constants
 
 // @interface MDCPalette : NSObject
 
-// @interface MDCPillShapeGenerator : NSObject <MDCShapeGenerating>
-
 // @interface MDCProgressView : UIView
 
 // @interface MDCProgressViewColorThemer : NSObject
 
 // @interface ToBeDeprecated (MDCProgressViewColorThemer)
 
-// @interface MDCRoundedCornerTreatment : MDCCornerTreatment
-
-// @interface MDCSlantedRectShapeGenerator : NSObject <MDCShapeGenerating>
-
-// @interface MDCSlider : UIControl <NSSecureCoding>
+// @interface MDCSlider : UIControl
 
 // @protocol MDCSliderDelegate <NSObject>
 
@@ -719,8 +774,6 @@ partial interface Constants
 
 // @interface MDCTextButtonColorThemer : NSObject
 
-// @interface MDCTextButtonThemer : NSObject
-
 // @interface MDCTextFieldColorThemer : NSObject
 
 // @interface ToBeDeprecated (MDCTextFieldColorThemer)
@@ -737,18 +790,40 @@ partial interface Constants
 
 // @interface MDCThumbView : UIView
 
-// @interface MDCTriangleEdgeTreatment : MDCEdgeTreatment
-
 // @protocol MDCTypographyFontLoading <NSObject>
 
 // @interface MDCTypography : NSObject
 
 // @interface MDCSystemFontLoader : NSObject <MDCTypographyFontLoading>
 
+// @interface MaterialRTL (NSLocale)
+
+// @interface MaterialBidi (NSString)
+
+// @interface MaterialRTL (UIImage)
+
+// @interface MaterialRTL (UIView)
+
 [Static]
 [Verify (ConstantsInterfaceAssociation)]
 partial interface Constants
 {
+	// extern double MDFInternationalizationVersionNumber;
+	[Field ("MDFInternationalizationVersionNumber", "__Internal")]
+	double MDFInternationalizationVersionNumber { get; }
+
+	// extern const unsigned char [] MDFInternationalizationVersionString;
+	[Field ("MDFInternationalizationVersionString", "__Internal")]
+	byte[] MDFInternationalizationVersionString { get; }
+
+	// extern double MDFInternationalizationVersionNumber;
+	[Field ("MDFInternationalizationVersionNumber", "__Internal")]
+	double MDFInternationalizationVersionNumber { get; }
+
+	// extern const unsigned char [] MDFInternationalizationVersionString;
+	[Field ("MDFInternationalizationVersionString", "__Internal")]
+	byte[] MDFInternationalizationVersionString { get; }
+
 	// extern double MDFTextAccessibilityVersionNumber;
 	[Field ("MDFTextAccessibilityVersionNumber", "__Internal")]
 	double MDFTextAccessibilityVersionNumber { get; }
@@ -899,8 +974,6 @@ partial interface Constants
 // @interface MDCTimingFunction (UIView)
 
 // @interface AppExtensions (UIApplication)
-
-// @interface MaterialBottomSheet (UIViewController)
 
 // @interface MDCCardReordering (UICollectionViewController) <UIGestureRecognizerDelegate>
 

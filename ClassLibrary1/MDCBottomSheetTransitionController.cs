@@ -1,4 +1,5 @@
-﻿using Foundation;
+﻿using System;
+using Foundation;
 using ObjCRuntime;
 using UIKit;
 
@@ -12,4 +13,8 @@ interface MDCBottomSheetTransitionController : IUIViewControllerAnimatedTransiti
     // @property (assign, nonatomic) BOOL dismissOnBackgroundTap;
     [Export ("dismissOnBackgroundTap")]
     bool DismissOnBackgroundTap { get; set; }
+
+    // @property (assign, nonatomic) CGFloat preferredSheetHeight;
+    [Export ("preferredSheetHeight")]
+    nfloat PreferredSheetHeight { get; set; }
 }

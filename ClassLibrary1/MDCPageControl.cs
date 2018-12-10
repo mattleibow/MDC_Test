@@ -35,6 +35,10 @@ interface MDCPageControl : IUIScrollViewDelegate
     [Export ("defersCurrentPageDisplay")]
     bool DefersCurrentPageDisplay { get; set; }
 
+    // @property (nonatomic) BOOL respectsUserInterfaceLayoutDirection;
+    [Export ("respectsUserInterfaceLayoutDirection")]
+    bool RespectsUserInterfaceLayoutDirection { get; set; }
+
     // -(void)updateCurrentPageDisplay;
     [Export ("updateCurrentPageDisplay")]
     void UpdateCurrentPageDisplay ();

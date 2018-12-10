@@ -58,7 +58,11 @@
     <Compile Include="MDCAlertColorThemer.cs" />
     <Compile Include="MDCAlertColorThemer_ToBeDeprecated.cs" />
     <Compile Include="MDCAlertController.cs" />
+    <Compile Include="MDCAlertControllerThemer.cs" />
     <Compile Include="MDCAlertControllerView.cs" />
+    <Compile Include="MDCAlertController_ButtonForAction.cs" />
+    <Compile Include="MDCAlertScheme.cs" />
+    <Compile Include="MDCAlertScheming.cs" />
     <Compile Include="MDCAlertTypographyThemer.cs" />
     <Compile Include="MDCAppBar.cs" />
     <Compile Include="MDCAppBarColorThemer.cs" />
@@ -67,8 +71,8 @@
     <Compile Include="MDCAppBarNavigationController.cs" />
     <Compile Include="MDCAppBarNavigationControllerDelegate.cs" />
     <Compile Include="MDCAppBarNavigationController_ToBeDeprecated.cs" />
-    <Compile Include="MDCAppBarTextColorAccessibilityMutator.cs" />
     <Compile Include="MDCAppBarTypographyThemer.cs" />
+    <Compile Include="MDCAppBarTypographyThemer_ToBeDeprecated.cs" />
     <Compile Include="MDCAppBarViewController.cs" />
     <Compile Include="MDCBaseCell.cs" />
     <Compile Include="MDCBasicColorScheme.cs" />
@@ -76,6 +80,13 @@
     <Compile Include="MDCBottomAppBarColorThemer.cs" />
     <Compile Include="MDCBottomAppBarColorThemer_ToBeDeprecated.cs" />
     <Compile Include="MDCBottomAppBarView.cs" />
+    <Compile Include="MDCBottomDrawerColorThemer.cs" />
+    <Compile Include="MDCBottomDrawerHeader.cs" />
+    <Compile Include="MDCBottomDrawerPresentationController.cs" />
+    <Compile Include="MDCBottomDrawerPresentationControllerDelegate.cs" />
+    <Compile Include="MDCBottomDrawerTransitionController.cs" />
+    <Compile Include="MDCBottomDrawerViewController.cs" />
+    <Compile Include="MDCBottomDrawerViewControllerDelegate.cs" />
     <Compile Include="MDCBottomNavigationBar.cs" />
     <Compile Include="MDCBottomNavigationBarColorThemer.cs" />
     <Compile Include="MDCBottomNavigationBarColorThemer_ToBeDeprecated.cs" />
@@ -83,6 +94,7 @@
     <Compile Include="MDCBottomNavigationBarTypographyThemer.cs" />
     <Compile Include="MDCBottomSheetController.cs" />
     <Compile Include="MDCBottomSheetControllerDelegate.cs" />
+    <Compile Include="MDCBottomSheetControllerShapeThemer.cs" />
     <Compile Include="MDCBottomSheetPresentationController.cs" />
     <Compile Include="MDCBottomSheetPresentationControllerDelegate.cs" />
     <Compile Include="MDCBottomSheetTransitionController.cs" />
@@ -98,6 +110,7 @@
     <Compile Include="MDCButtonColorThemer_ToBeDeprecated.cs" />
     <Compile Include="MDCButtonScheme.cs" />
     <Compile Include="MDCButtonScheming.cs" />
+    <Compile Include="MDCButtonShapeThemer.cs" />
     <Compile Include="MDCButtonTitleColorAccessibilityMutator.cs" />
     <Compile Include="MDCButtonTypographyThemer.cs" />
     <Compile Include="MDCCard.cs" />
@@ -105,6 +118,7 @@
     <Compile Include="MDCCardScheme.cs" />
     <Compile Include="MDCCardScheming.cs" />
     <Compile Include="MDCCardsColorThemer.cs" />
+    <Compile Include="MDCCardsShapeThemer.cs" />
     <Compile Include="MDCCardThemer.cs" />
     <Compile Include="MDCChipCollectionViewCell.cs" />
     <Compile Include="MDCChipCollectionViewFlowLayout.cs" />
@@ -116,6 +130,7 @@
     <Compile Include="MDCChipViewFontThemer.cs" />
     <Compile Include="MDCChipViewScheme.cs" />
     <Compile Include="MDCChipViewScheming.cs" />
+    <Compile Include="MDCChipViewShapeThemer.cs" />
     <Compile Include="MDCChipViewThemer.cs" />
     <Compile Include="MDCChipViewTypographyThemer.cs" />
     <Compile Include="MDCCollectionViewCell.cs" />
@@ -132,6 +147,7 @@
     <Compile Include="MDCContainedButtonColorThemer.cs" />
     <Compile Include="MDCContainedButtonThemer.cs" />
     <Compile Include="MDCCornerTreatment.cs" />
+    <Compile Include="MDCCornerTreatment_CornerTypeInitalizer.cs" />
     <Compile Include="MDCCurvedCornerTreatment.cs" />
     <Compile Include="MDCCurvedRectShapeGenerator.cs" />
     <Compile Include="MDCCutCornerTreatment.cs" />
@@ -162,6 +178,7 @@
     <Compile Include="MDCFloatingActionButtonThemer.cs" />
     <Compile Include="MDCFloatingButton.cs" />
     <Compile Include="MDCFloatingButtonColorThemer.cs" />
+    <Compile Include="MDCFloatingButtonShapeThemer.cs" />
     <Compile Include="MDCFloatingButton_Animation.cs" />
     <Compile Include="MDCFontScheme.cs" />
     <Compile Include="MDCHeaderStackView.cs" />
@@ -192,6 +209,11 @@
     <Compile Include="MDCKeyboardWatcher.cs" />
     <Compile Include="MDCLeadingViewTextInput.cs" />
     <Compile Include="MDCLibraryInfo.cs" />
+    <Compile Include="MDCListColorThemer.cs" />
+    <Compile Include="MDCListScheme.cs" />
+    <Compile Include="MDCListScheming.cs" />
+    <Compile Include="MDCListThemer.cs" />
+    <Compile Include="MDCListTypographyThemer.cs" />
     <Compile Include="MDCMaskedTransitionController.cs" />
     <Compile Include="MDCMultilineTextField.cs" />
     <Compile Include="MDCMultilineTextInput.cs" />
@@ -222,13 +244,17 @@
     <Compile Include="MDCRaisedButton.cs" />
     <Compile Include="MDCRectangleShapeGenerator.cs" />
     <Compile Include="MDCRoundedCornerTreatment.cs" />
+    <Compile Include="MDCSelfSizingStereoCell.cs" />
     <Compile Include="MDCSemanticColorScheme.cs" />
     <Compile Include="MDCShadowLayer.cs" />
     <Compile Include="MDCShadowLayer_Subclassing.cs" />
     <Compile Include="MDCShadowMetrics.cs" />
+    <Compile Include="MDCShapeCategory.cs" />
     <Compile Include="MDCShapedShadowLayer.cs" />
     <Compile Include="MDCShapedView.cs" />
     <Compile Include="MDCShapeGenerating.cs" />
+    <Compile Include="MDCShapeScheme.cs" />
+    <Compile Include="MDCShapeScheming.cs" />
     <Compile Include="MDCSlantedRectShapeGenerator.cs" />
     <Compile Include="MDCSlider.cs" />
     <Compile Include="MDCSliderColorThemer.cs" />
@@ -323,15 +349,19 @@
     <Compile Include="MDMTransitionWithFallback.cs" />
     <Compile Include="MDMTransitionWithFeasibility.cs" />
     <Compile Include="MDMTransitionWithPresentation.cs" />
+    <Compile Include="NSLocale_MaterialRTL.cs" />
+    <Compile Include="NSString_MaterialBidi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UIApplication_AppExtensions.cs" />
     <Compile Include="UICollectionViewController_MDCCardReordering.cs" />
     <Compile Include="UIFontDescriptor_MaterialTypography.cs" />
     <Compile Include="UIFont_MaterialSimpleEquality.cs" />
     <Compile Include="UIFont_MaterialTypography.cs" />
+    <Compile Include="UIImage_MaterialRTL.cs" />
     <Compile Include="UIViewController_MaterialBottomSheet.cs" />
     <Compile Include="UIViewController_MaterialDialogs.cs" />
     <Compile Include="UIViewController_MDMTransitionController.cs" />
+    <Compile Include="UIView_MaterialRTL.cs" />
     <Compile Include="UIView_MDCTimingFunction.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

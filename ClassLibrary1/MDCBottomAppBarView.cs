@@ -1,4 +1,5 @@
-﻿using Foundation;
+﻿using System;
+using Foundation;
 using ObjCRuntime;
 using UIKit;
 
@@ -21,6 +22,10 @@ interface MDCBottomAppBarView
     [Export ("floatingButton", ArgumentSemantic.Strong)]
     MDCFloatingButton FloatingButton { get; }
 
+    // @property (assign, nonatomic) CGFloat floatingButtonVerticalOffset;
+    [Export ("floatingButtonVerticalOffset")]
+    nfloat FloatingButtonVerticalOffset { get; set; }
+
     // @property (copy, nonatomic) NSArray<UIBarButtonItem *> * _Nullable leadingBarButtonItems;
     [NullAllowed, Export ("leadingBarButtonItems", ArgumentSemantic.Copy)]
     UIBarButtonItem[] LeadingBarButtonItems { get; set; }
@@ -32,6 +37,14 @@ interface MDCBottomAppBarView
     // @property (nonatomic, strong) UIColor * _Nullable barTintColor __attribute__((annotate("ui_appearance_selector")));
     [NullAllowed, Export ("barTintColor", ArgumentSemantic.Strong)]
     UIColor BarTintColor { get; set; }
+
+    // @property (nonatomic, strong) UIColor * _Nonnull leadingBarItemsTintColor;
+    [Export ("leadingBarItemsTintColor", ArgumentSemantic.Strong)]
+    UIColor LeadingBarItemsTintColor { get; set; }
+
+    // @property (nonatomic, strong) UIColor * _Nonnull trailingBarItemsTintColor;
+    [Export ("trailingBarItemsTintColor", ArgumentSemantic.Strong)]
+    UIColor TrailingBarItemsTintColor { get; set; }
 
     // @property (nonatomic, strong) UIColor * _Nullable shadowColor __attribute__((annotate("ui_appearance_selector")));
     [NullAllowed, Export ("shadowColor", ArgumentSemantic.Strong)]

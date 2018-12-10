@@ -18,9 +18,4 @@ interface MDCTriangleEdgeTreatment
     [Export ("initWithSize:style:")]
     [DesignatedInitializer]
     IntPtr Constructor (nfloat size, MDCTriangleEdgeStyle style);
-
-    // -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)aDecoder __attribute__((objc_designated_initializer));
-    [Export ("initWithCoder:")]
-    [DesignatedInitializer]
-    IntPtr Constructor (NSCoder aDecoder);
 }
